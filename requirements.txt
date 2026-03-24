@@ -1,0 +1,15 @@
+torch
+numpy
+omegaconf
+transformers
+torchmetrics
+tqdm
+
+# torchtune is a local fork — no setup.py, so pip install -e won't work.
+# Instead, install torchtune via pip (for the `tune` CLI), then override it
+# at runtime with PYTHONPATH pointing to the local fork:
+#
+#   pip install torchtune
+#
+#   cd torchtune-reptile && PYTHONPATH=${PWD}:$PYTHONPATH tune run custom_lora_reptile.py --config ...
+#   cd torchtune-bayes   && PYTHONPATH=${PWD}:$PYTHONPATH tune run custom_lora.py --config ...
