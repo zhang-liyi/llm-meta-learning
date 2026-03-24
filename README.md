@@ -3,7 +3,7 @@ The code is modified from the torchtune open-source library for LLM fine-tuning 
 Requirements before running the code:
 * Clone or download this repo 
 * Download either Llama3-8B or Qwen2-7B
-* Inside custom_lora.py (for Bayesian meta-learning) or custom_lora_reptile.py (for Reptile meta-learning), search for the model_path variable, and set it to your local LLM folder path.
+* Inside any config file you will be using (those .yaml files inside the config_files/ folder), search for the MODEL_PATH variable, and set them to your local LLM folder path.
 
 Example way to run the Bayesian Meta-Learning method:
 

@@ -2136,10 +2136,10 @@ def recipe_main(cfg: DictConfig) -> None:
     DATASET = str(cfg.dataset._component_).split('_')[1]
     if 'llama' in str(cfg.model._component_):
         MODEL = 'llama'
-        model_path = "your-llama-path"
+        model_path = str(cfg.model_path)
     elif 'qwen' in str(cfg.model._component_):
         MODEL = 'qwen'
-        model_path = "your-qwen-path"
+        model_path = str(cfg.model_path)
 
     LIMITED_DATA = '' # '_limited', otherwise empty string ''
     RUN_PRUNING = False
