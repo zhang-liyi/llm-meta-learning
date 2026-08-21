@@ -53,7 +53,7 @@ dataset:
   packed: False  # True increases speed
 seed: 1
 shuffle: True
-batch_size: 1
+batch_size: 2
 metaeval_steps: 5
 
 # Optimizer and Scheduler
